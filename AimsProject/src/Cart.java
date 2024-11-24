@@ -92,4 +92,34 @@ public class Cart {
         System.out.println("Total cost: " + TotalCost());
         System.out.println("*************************************************");
     }
+    
+    //Tìm đĩa theo id
+    public void searchCart(int id){
+        int check = 0;
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemsOrdered[i].isMatch(id)) {
+                check = 1;
+                System.out.println("Item found: " + itemsOrdered[i].toString());
+                break;
+            }
+        }
+        if (check == 0) {
+            System.out.println("Item not found");
+        }
+    }
+
+    //Tìm đĩa theo title
+    public void searchCart(String title){
+        int check = 0;
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemsOrdered[i].isMatch(title)) {
+                check = 1;
+                System.out.println("Item found: " + itemsOrdered[i].toString());
+                break;
+            }
+        }
+        if (check == 0) {
+            System.out.println("Item not found");
+        }
+    }
 }
