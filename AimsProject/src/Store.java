@@ -32,7 +32,7 @@ public class Store {
             }
         }
         if (!removed){
-            System.out.println("DVD not found!");
+            System.out.println("DVD not found");
         }
     }
 }
