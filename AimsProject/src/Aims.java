@@ -35,5 +35,10 @@ public class Aims {
         System.out.print("Total Cost is: ");
         System.out.println(anOrder.TotalCost());
         System.out.println("==========================================================");
+        
+        //test print method
+        anOrder.print();
+        System.out.println("==========================================================");
+
     }
 }

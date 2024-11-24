@@ -42,7 +42,7 @@ public class Cart {
         return Math.round(totalCost * 100) / 100.0f;
     }
     
-//2.1
+    //2.1
     // public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
     //     if (qtyOrdered + dvdList.length <= MAX_NUMBERS_ORDERED) {
     //         for (int i = 0 ; i < dvdList.length ; i++) {
@@ -68,7 +68,7 @@ public class Cart {
         }
     }
 
-//2.2
+    //2.2
     public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
         if (qtyOrdered + 2 <= MAX_NUMBERS_ORDERED) {
             itemsOrdered[qtyOrdered] = dvd1;
@@ -80,5 +80,16 @@ public class Cart {
         else {
             System.out.println("Please reduce the number of discs.");
         }
+    }
+    
+    //6 in ra danh sách đĩa trong giỏ
+    public void print(){
+        System.out.println("**********************CART**********************");
+        System.out.println("Ordered Items:");
+        for (int i = 0; i < qtyOrdered; i++) {
+            System.out.println(i+1 + "." + itemsOrdered[i].toString());
+        }
+        System.out.println("Total cost: " + TotalCost());
+        System.out.println("*************************************************");
     }
 }
