@@ -28,5 +28,12 @@ public class Aims {
         System.out.println("Test the functionality of removing a disc that is not in the cart");
         anOrder.addDigitalVideoDisc(dvd_1);
         anOrder.RemoveDigitalVideoDisc(dvd_3);
+        System.out.println("==========================================================");
+        
+        System.out.println("Test overloading");
+        anOrder.addDigitalVideoDisc(dvd_1, dvd_2, dvd_3);
+        System.out.print("Total Cost is: ");
+        System.out.println(anOrder.TotalCost());
+        System.out.println("==========================================================");
     }
 }
