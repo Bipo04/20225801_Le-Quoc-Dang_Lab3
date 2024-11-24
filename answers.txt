@@ -1,1 +1,3 @@
 Có. Với cơ chế nạp chồng phương thức của JAVA, chỉ cần danh sách các tham số đầu vào khác nhau, bạn có thể định nghĩa nhiều constructor trong cùng một class.
+
+//LAB 3
