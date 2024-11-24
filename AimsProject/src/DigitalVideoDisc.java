@@ -86,4 +86,23 @@ public class DigitalVideoDisc {
         nbDigitalVideoDiscs++;
         id = nbDigitalVideoDiscs;
     }
+    
+    @Override
+    public String toString() {
+        return " DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + "$";
+    }
+
+    public boolean isMatch(int id){
+        return this.id == id;
+    }
+
+    public boolean isMatch(String title){
+        String[] tmp = title.split(" ",0);
+        for (String s : tmp) {
+            if (getTitle().toLowerCase().contains(s.toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
