@@ -39,6 +39,11 @@ public class Aims {
         //test print method
         anOrder.print();
         System.out.println("==========================================================");
+        
+        //test the search method
+        anOrder.searchCart(3);
+        anOrder.searchCart("The Lion King");
+        anOrder.searchCart(0);
 
     }
 }
