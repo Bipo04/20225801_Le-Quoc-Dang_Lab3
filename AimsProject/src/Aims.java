@@ -7,7 +7,7 @@ public class Aims {
 
         DigitalVideoDisc dvd_2 = new DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 87, 24.95f);
         anOrder.addDigitalVideoDisc(dvd_2);
-
+        
         DigitalVideoDisc dvd_3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
         anOrder.addDigitalVideoDisc(dvd_3);
 
